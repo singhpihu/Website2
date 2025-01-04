@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        .upper-box{
+            width: 100%;
+            height: auto;
+            box-shadow:0 4px 8px 0  rgba(0,0,0,0.2);
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            
+        }
+
+
+
+        .nav li {
+            display: inline-block; 
+            padding: 0px 30px; 
+           
+        }
+
+        .nav img {
+            width: 125px;
+            height: 25px;
+            
+        }
+
+        .nav div {
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+            font-style:initial;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 3px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 50%;
+        }
+
+        .button:hover {
+            background-color: #3e8e41;
+        }
+        .content{
+            margin-top: 20vh;
+            margin-left: 5%;
+            width: 50%;
+            height: auto;
+        }
+
+
+        .a{
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 3px 20px;
+            font-size: 16px;
+            cursor: pointer;   
+        }
+
+        .a:hover {
+            background-color: #3e8e41;
+        }
+
+
+        .side {
+      text-decoration: none;
+      padding: 0;
+    }
+    .side li {
+      margin-bottom: 20px;
+    }
+    .side li span {
+      display: inline-block;
+      width: 55px;
+      height: 30px;
+      color: black;
+      font-size: 18px;
+      margin-left: 50px;
+    }
+    .side li .heading {
+      font-size: 15px;
+      width: 15%;
+    }
+    
+     .heading {
+            cursor: pointer;
+        }
+
+         .web {
+            height: 550px;
+            width: 650px;
+            margin-left: 50%;
+            margin-top: -24%;
+        }
+
+       .top{
+                  margin-top: 10%;
+                  margin-left: 8%;
+       } 
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-top: -955px;
+            
+        }
+
+        .program {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            width: 50%;
+            margin-left: 80%;
+            box-shadow:0 4px 8px 0  rgba(0,0,0,0.2);
+        }
+
+        .program-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .program-title {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .program-details {
+            margin-top: 5px;
+        }
+
+        .program-button {
+            background-color: rgb(203, 203, 214); 
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+
+        .image2{
+            width: 8%;
+            margin-top: 7%;
+            background-color: white;
+        position: absolute;
+        opacity: 1;
+        margin-left: -15%;
+        border-radius: 6%;
+        
+        }
+        .line1{
+            font-size:small;
+        }
+       .line2{
+               margin-left: 43%;
+               margin-top: 13%;
+               color: rgb(101, 101, 240);
+               font-size: large;
+       }
+       .line3{
+        margin-left: 33%;
+        font-size: 50px;
+       }
+       .line4{
+        width: 15%;
+        margin-left: 10%;
+       }
+       .line5{
+        background-color: #dddddde6;
+        color: rgba(70, 70, 229, 0.752);
+        margin-left: 43%;
+        margin-top: 10%;
+        width: 20%;
+        height: 50px;
+        font-size: 20px;
+       border-radius: 15px;
+       border-color: white;
+       cursor: pointer;
+       padding-left: 1.5%;
+       }
+       .line6{ 
+        margin-left: 48%;
+               margin-top: 10%;
+               color: rgb(101, 101, 240);
+               font-size: large;
+       }
+       .line7{
+        margin-left: 30%;
+        font-size: 50px;
+        margin-top: -1%;
+       }
+       .line8{
+        
+        height: 550px;
+            width: 650px;
+            margin-left: 5%;
+       }
+         .line9{
+            margin-left: 60%;
+            margin-top: -35%;
+            color: rgba(0, 0, 0, 0.904);
+         }
+         .line10{
+            margin-left: 60%;
+            margin-top: 5%;
+            color: rgba(0, 0, 0, 0.534);
+            width: 35%;
+            font-size: 20px;
+         }
+         .line11{
+            margin-left: 65%;
+            margin-top: 10%;
+            border-radius: 360px;
+            background-color:rgba(248, 220, 220, 0.425);
+            width: 2%;
+            height: 30px;
+            padding-left: 0.5%;
+            padding-top: .3%;
+         }
+         .line12{
+            margin-left: 85%;
+            margin-top: -2%;
+            border-radius: 360px;
+            background-color:rgba(248, 220, 220, 0.425);
+            width: 2%;
+            height: 30px;
+            padding-left: 0.5%;
+            padding-top: .3%;
+         }
+         .line13{
+            margin-left: 63%;
+         }
+         .line14{
+            margin-left: 85%;
+            margin-top: -6%;
+         }
+         .line13 h3{
+            margin-left :-10%; 
+         }
+         
+         .line14 h3{
+            margin-left :-15%; 
+         }
+         .line15{  
+        height: 550px;
+            width: 650px;
+            margin-left: 53%;
+            margin-top: 8%;
+         }
+         .line16{
+                margin-left: 8%;
+            margin-top: -35%;
+            color: rgba(0, 0, 0, 0.904);
+         }
+         .line17{
+          margin-left: 10%;
+            margin-top: 5%;
+            color: rgba(0, 0, 0, 0.534);
+            width: 30%;
+            font-size: 20px;  
+         }
+         .line18{
+            width: 2.5%;
+            height: 35px;
+            border-radius: 360px;
+            background-color:rgba(248, 220, 220, 0.425);
+            margin-left: 25%;
+            margin-top: 8%;
+            padding-left: .7%;
+            padding-top: .5%
+            ;
+         }
+         .line19{
+            margin: 7% 17%;
+            background-color: rgba(57, 57, 209, 0.874);
+            width: 20%;
+            height:50px;
+            color: white;
+             border-radius: 9%;
+         }
+         .line20{
+        height: 550px;
+            width: 650px;
+            margin-left: 5%;
+         }
+         .line21{
+            margin-left: 60%;
+            margin-top: -35%;
+            color: rgba(0, 0, 0, 0.904);
+
+         }
+         .line22{
+            margin-left: 60%;
+            margin-top: 5%;
+            color: rgba(0, 0, 0, 0.534);
+            width: 35%;
+            font-size: 20px;
+         }
+         .line23{
+            margin-left: 65%;
+            margin-top: 10%;
+            border-radius: 360px;
+            background-color:rgba(248, 220, 220, 0.425);
+            width: 2%;
+            height: 30px;
+            padding-left: 0.5%;
+            padding-top: .3%;
+         }
+         .line24{
+            margin-left: 85%;
+            margin-top: -2%;
+            border-radius: 360px;
+            background-color:rgba(248, 220, 220, 0.425);
+            width: 2%;
+            height: 30px;
+            padding-left: 0.5%;
+            padding-top: .3%;
+         }
+         .line25{
+            margin-left: 65%;
+         }
+         .line25 h3{
+            margin-left :-8%; 
+         }
+
+         .line26{
+            margin-left: 85%;
+            margin-top: -6%;
+         }
+         .line26 h3{
+            margin-left :-19%; 
+         }
+         .line27{
+            width: 50%;
+            height: 50%;
+            margin-left: 13%;
+         }
+         
+.line28 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-left: 15%;
+}
+
+.box {
+  width: 600px;
+  height: 90px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px 2px;
+  text-align: center;
+  box-shadow:0 4px 8px 0  rgba(0,0,0,0.2);
+  background-color: #f9f9f9e7;
+}
+
+.box-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  margin-left: -51%;
+  padding-top: 2%;
+}
+
+.box-rating {
+  color: #ffcc00;
+  margin-left: 70%;
+  margin-top: -5%;
+  padding-top: -2%;
+  background-color: rgba(38, 38, 198, 0.905);
+  width: 15%;
+  height: 18px;
+  border-radius: 25px;
+
+}
+.image3{
+       width: 15%;
+       height: 10px;
+       padding-top: 2%;
+       
+}
+
+.line29{
+    background-color: #ddd;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    height: 30%;
+}
+.line29 img {
+        height: 580px;
+            width: 550px;
+            padding-left: 47.7%;
+            padding-top: -5%;
+}
+
+.line30{
+    margin-top: -30%;
+    width: 25%;
+    margin-left: 22%;
+}
+.line30 h1{
+    font-size: 50px;
+}
+.line30 h3{
+    color: grey;
+    font-size: 20px;
+}
+.line30 button{
+             background-color: rgb(39, 39, 205);
+             color: white;
+             width: 50%;
+             height: 50px;
+             border-radius: 15px;
+}
+.line31{
+    margin-top: 18%;
+    margin-left: 10%;
+}
+.line31 button{
+    background-color: rgba(128, 128, 128, 0.918);
+             width: 20%;
+             height: 50px;
+             border-radius: 15px;
+
+}
+.line32{
+    
+    background-color: #ddddddd7;
+    width: 50%;
+    margin-top: 5%;
+    height: 620px;
+
+}
+.line32 img{
+    
+    height: 620px;
+            width: 450px;
+            padding-left: 47.7%;
+            padding-top: -5%;
+}
+.line33{
+    
+    margin-top: -42%;
+    width: 15%;
+    margin-left: 2%;
+}
+.line34{
+    background-color: #ddddddd7;
+    width: 42%;
+    margin-top: 5%;
+    height: 620px;
+    margin-left: 57%;
+    margin-top: -42.5%;
+}
+.line34 img{
+    height: 620px;
+            width: 350px;
+            padding-left: 47.7%;
+            padding-top: -5%;
+}
+.line35{
+    width: 15%;
+    margin-left: 58%;
+    margin-top: -42%;
+}
+
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="upper-box">
+        <ul class="nav">
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2BU1c2W7APlQ0GYn5kpIlG1ETtQXtNMb3GQ&s"></li>
+            <li><div>Explore programs</div></li>
+            <li><div>Study Abroad</div></li>
+            <li><div>Career Support</div></li>
+            <li><div>Success Stories</div></li>
+            <li><div>Enterprise</div></li>
+            <li><div>For Recruiters</div></li>
+            <li><div>More</div></li>
+            <li><button type="submit" class="button">Login</button></li>
+        </ul>
+    </div>
+      
+
+    <div class="content">
+        <h3 style="color: red;">Learn with</h3>
+        <h1 style="font-size: 250%;">India's Trusted Education Platform</h1>
+        <h3 style="font-size: 150%;">Power ahead in your career with certified courses & degrees </h3>
+        <h3 style="font-size: 150%;">from world class universities</h3>
+        <h4 style="color: rgba(0, 0, 255, 0.566);">50% average salary hike</h4>
+        <button type="submit" class="a">ExPLORE PROGRAMMS</button>
+    </div>
+
+    <img src="https://t3.ftcdn.net/jpg/06/19/76/90/360_F_619769049_pxEEvXT1UjRmsgV7UNGw3RFE1FNMjrOq.jpg"  class="web">
+
+    
+    <h1 class="top">Programs in partnership with world's top universities</h1>
+
+    <div class="left">
+    <ul class="side">
+       
+        <li>
+            <span class="icon"></span>
+            <span class="heading">Popular Courses</span>
+          </li>
+
+        <li>
+          <span class="icon"></span>
+          <span class="heading">AI & Machine Learning</span>
+        </li>
+        <li>
+          <span class="icon"></span>
+          <span class="heading">Data Science & Business Analytics</span>
+        </li>
+        <li>
+          <span class="icon"></i> </span>
+          <span class="heading">Microsoft Programs</span>
+        </li>
+        <li>
+          <span class="icon"></span>
+          <span class="heading">Study Abroad</span>
+        </li>
+        <li>
+          <span class="icon"></span>
+          <span class="heading">Management</span>
+        </li>
+        <li>
+          <span class="icon"></span>
+          <span class="heading">Bootcamps</span>
+        </li>
+        <li>
+          <span class="icon"></span>
+          <span class="heading">Cloud Computing</span>
+        </li>
+        <li>
+          <span class="icon"></i></span>
+          <span class="heading">Cyber Security</span>
+        </li>
+        <li>
+          <span class="icon"></span>
+          <span class="heading">Software Development</span>
+        </li>
+        
+        <li>
+            <span class="icon"></span>
+            <span class="heading">Digital Marketing</span>
+          </li>
+          
+        <li>
+            <span class="icon"></span>
+            <span class="heading">Design</span>
+          </li>
+          
+        <li>
+            <span class="icon"></span>
+            <span class="heading">MBA</span>
+          </li>
+          
+        <li>
+            <span class="icon"></span>
+            <span class="heading">Master</span>
+          </li>
+          
+        <li>
+            <span class="icon"></span>
+            <span class="heading">Doctrate</span>
+          </li>
+    </ul></div>
+
+    <div class="container">
+        <div class="program">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-banners/ut-austin.jpg" alt="Program 1" class="program-image">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-logos/texas-austin.png" class="image2">
+            <p style="color: rgba(179, 179, 226, 0.893);" class="line1" >UNIVERSITIES OF TEXAS-MCCOMBS</p>
+            <h3 class="program-title">PG Program in Artificial Intelligence & Machine Learning</h3>
+            <div class="program-details">
+                <p>12 Months - Online</p>
+                <button class="program-button" >#1 Ranked AI Program</button>
+                
+            </div>
+        </div>
+        <div class="program" style="margin-left: 48%;">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-banners/ut-austin.jpg" alt="Program 2" class="program-image">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-logos/texas-austin.png" class="image2">
+            <p style="color: rgba(179, 179, 226, 0.893);" class="line1">UNIVERSITIES OF TEXAS-MCCOMBS</p>
+            <h3 class="program-title">PGP in Data Science and Business Analytics</h3>
+            <div class="program-details">
+                <p>12 months - Online</p>
+                <button class="program-button">Dedicated Career Support</button>
+            </div>
+        </div>
+        <div class="program"style="margin-left: 15%;">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-banners/great-lakes.jpg" alt="Program 3" class="program-image">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-logos/great-lakes.png " class="image2">
+            <p style="color: rgba(179, 179, 226, 0.893);"class="line1" >GREAT LAKES EXECUTIVE LEARNING</p>
+            <h3 class="program-title">PGP in Data Science and Engineering (Bootcamp)</h3>
+            <div class="program-details">
+                <p>5 Months - Classroom</p>
+                <button class="program-button">Dedicated Placement Assistance</button>
+            </div>
+        </div>
+        <div class="program">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-banners/great-lakes.jpg" alt="Program 3" class="program-image">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-logos/great-lakes.png " class="image2">
+            <p style="color: rgba(179, 179, 226, 0.893);"class="line1" >GREAT LAKES INSTITUTE OF MANAGEMENT</p>
+            <h3 class="program-title">Post Graduate Diploma in Management(Online)</h3>
+            <div class="program-details">
+                <p>24 Months . Online</p>
+            </div>
+        </div>
+        <div class="program" style="margin-left: 48%;">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-banners/great-lakes.jpg" alt="Program 3" class="program-image">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-logos/great-lakes.png " class="image2">
+            <p style="color: rgba(179, 179, 226, 0.893);" class="line1">GREAT LAKES EXECUTIVE LEARNING</p>
+            <h3 class="program-title">PG Program in Cloud Computing</h3>
+            <div class="program-details">
+                <p>8 Months - Online</p>
+                <button class="program-button">  <p>360<sup>.</sup>CLOUD LEARNING</p> </button>
+            </div>
+        </div>
+        <div class="program" style="margin-left: 15%;">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/Microsoft.jpeg" alt="Program 3" class="program-image">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/company-logo-assets/microsoft_azure.png" class="image2">
+            <p style="color: rgba(179, 179, 226, 0.893);"class="line1" >MICROSOFT AZURE</p>
+            <h3 class="program-title">Generative AI for Business with Microsoft Azure Open AI Program</h3>
+            <div class="program-details">
+                <p>16 Weeks - Online</p>
+            </div>
+        </div>
+        <div class="program">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-banners/ut-austin.jpg" alt="Program 3" class="program-image">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-logos/texas-austin.png" class="image2">
+            <p style="color: rgba(179, 179, 226, 0.893);"class="line1" >UNIVERSITIES OF TEXAS-MCCOMBS</p>
+            <h3 class="program-title">Artificial Intelligence PG Program for Leaders</h3>
+            <div class="program-details">
+                <p>5 Months - Online Weekend</p>
+                <button class="program-button">NO PROGRAMMING EXP REQUIRED</button>
+            </div>
+        </div>
+        
+        <div class="program" style="margin-left: 48%;">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-banners/northwestern.jpg" alt="Program 3" class="program-image">
+            <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-logos/northwestern.png " class="image2">
+            <p style="color: rgba(179, 179, 226, 0.893);" class="line1">NORTHWESTERN UNIVERSITIES</p>
+            <h3 class="program-title">MS in Data Science Programme</h3>
+            <div class="program-details">
+                <p>18 Months - Online</p>
+                <button class="program-button">Live Session</button>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="line2">In Partnership With</h4>
+    <h1 class="line3">World's Top Universities</h1>
+    <tr>
+    <td ><img class="line4" src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-logos/stanford-business.png"></td>
+    <td ><img style="margin-left: 7%;" class="line4" src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-logos/texas-austin.png"></td>
+    <td ><img style="margin-left: 8%;" class="line4" src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-logos/great-lakes.png"></td>
+    <td ><img class="line4" src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-logos/northwestern.png"></td>
+</tr>
+
+<tr>
+    <td><img class="line4" src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-logos/mit-idss.png"></td>
+    <td><img style="margin-left: 7%;" class="line4" src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/univ-logos/arizona-university.png"></td>
+    <td><img style="margin-left: 8%;" class="line4" src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/universities/wharton-logo.png"></td>
+    <td><img class="line4" src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/institutions/deakin-v2.png"></td>
+</tr>
+<button class="line5">View More Universities</button>
+
+<h4 class="line6">Here are More Reason</h4>
+<h1 class="line7">Why choose Great Learning Courses?</h1>
+
+<img class="line8" src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/gl-advantage-img-1.jpg">
+<div class="line9"><h1>Get Personalised Guidance </h1></div>
+<div class="line10"><p>Weekly mentorship sessions with Industry Experts 
+    along with Personalized attention in small groups 
+    of 5-15 learners. Gain hands-on exposure through
+ industry-relevant projects</p></div>
+ <tr></tr>
+ <div class="line11">
+<img src="https://d1vwxdpzbgdqj.cloudfront.net/home-new-variant/tick.svg"></div>
+<div class="line12">
+<img src="https://d1vwxdpzbgdqj.cloudfront.net/home-new-variant/star.svg"></div>
+
+<div class="line13">
+    <h2>2,00,000 +</h2>
+    <h3>Mentorship session completed</h3>
+</div>
+
+<div class="line14">
+    <h2>4.7/5</h2>
+    <h3>Average Mentor Rating</h3>
+</div>
+
+<div class="line15">
+    <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/gl-advantage-img-2.jpg">
+</div>
+
+<div class="line16"><h1>GL Excelerate Dedicated Career Support</h1></div>
+<div class="line17"><p>We offer mock interviews to prep for your dream job. 
+    Participate in hackathons and career fairs to stay ahead of 
+    others.</p></div>
+    <div class="line18">
+        <img src="https://d1vwxdpzbgdqj.cloudfront.net/home-new-variant/work-outline.svg"></div>
+        <h2 style="margin: 5% 24%;">33000+</h2>
+        <h3 style="margin: -4% 22%;" color="grey;">Hiring Companies</h3>
+        <button class="line19" >Learn More</button>
+
+<div class="line20"><img src="https://d1vwxdpzbgdqj.cloudfront.net/home-new-variant/networking-banner.png"></div>
+ <div class="line21"><h1>Networking and Program Support</h1></div>
+<div class="line22"><p>Grow your professional network with peer interactions,
+ sessions with industry leaders,and get access to
+  a dedicated program manager to solve your queries.</p></div>
+      <div class="line23"><img src="https://d1vwxdpzbgdqj.cloudfront.net/home-new-variant/support.svg"></div>
+      <div class="line24"><img src="https://d1vwxdpzbgdqj.cloudfront.net/home-new-variant/star.svg"></div>  
+     
+      <div class="line25">
+        <h2>1.1</h2>
+        <h3>Program support</h3></div>       
+
+        <div class="line26">
+            <h2>4.3/5</h2>
+        <h3>Average Support Rating</h3></div>
+
+        
+    <h4 class="line2">Provide online education for</h4>
+    <h1 class="line3">Learners across 170+ countries</h1>
+    
+    <div class="line27">
+        <img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/learners-banner.png">
+    </div>
+
+    
+
+<div class="line28">
+    <div class="box">
+        <div class="image3"><img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/course-report.png" style="padding-top: 3%;"></div>
+      <div class="box-title">CourseReport.com</div>
+      <div class="box-rating">4.81</div>
+    </div>
+  
+    <div class="box">
+        <div class="image3"><img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/google-store-logo.png"></div>
+      <div class="box-title">Google Play</div>
+      <div class="box-rating">4.6</div>
+    </div>
+  
+    <div class="box">
+        <div class="image3"><img src="https://d1vwxdpzbgdqj.cloudfront.net/home-new-variant/trust-pilot.png" style="width: 70%;"></div>
+      <div class="box-title">Trustpilot.com</div>
+      <div class="box-rating">4.8</div>
+    </div>
+  
+    <div class="box">
+        <div class="image3"><img src="https://d1vwxdpzbgdqj.cloudfront.net/home-new-variant/career-karma-logo.png"></div>
+      <div class="box-title">Career Karma</div>
+      <div class="box-rating">4.7</div>
+    </div>
+  
+    <div class="box" style="margin-left: 55%;">
+        <div class="image3"><img src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/mouthshut.png" style="width: 80%;"></div>
+      <div class="box-title">Mouthshut.com</div>
+      <div class="box-rating">4.63</div>
+    </div>
+  </div>
+
+
+   <div class="line29">
+    <img src="https://cdn.careerfoundry.com/en/wp-content/uploads/2021/06/learning-how-to-become-a-web-developer-could-be-the-best-move-you-can-make.jpeg"></div>
+  
+    <div class="line30">
+    <h1>Explore Free Courses</h1>
+  <h3>Start your online journey
+    at great Learning Academy for 
+    free with our short-term basic
+    courses across various in- 
+    demand domains.</h3>
+    <a href="#"><button>START FOR FREE</button></a></div>
+  
+    <div class="line31">
+  <h3 style="color: blue;">Inspiring everyone to learn with</h3>
+    <h1 style="font-size: 50px;">Multiple stories of growth</h1>
+    <h4 style="color: grey;">Find out how our Learners transformed their careers after learning with us.</h4>
+    <a href=""><button>GET INSPIRED</button></a></div>
+  
+    <div class="line32">
+        <img src="data:image/jpeg;base64,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">
+    </div>
+    <div class="line33">
+        <h1>A smooth career transition into the Data Science domain </h1>
+  <h3>Being a non-IT person, I was ready 
+    to face a lot of hiccups in my journey
+     from architecture to Data Science.
+      However, Great Learning’s well-structured
+       curriculum, expert faculty, 
+       and program mentors helped me get
+        a clear hands-on idea of all concepts. 
+        I got placed within 7 months in the Data Science
+         field.</h3>
+
+         <img style="width: 15%;" margin-top="10%;" src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/cotiviti.png">
+         <h3 >Pooja Kabadi</h3>
+         <h4 style="color: blue;">Associate Business Analyst. Cotiviti</h4>
+    </div>
+
+    <div class="line34">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX1vpGtScIR7R-LSCPwr_Clyk79LL08xQXW7VxHTBuUwgZl4OiDaKdU7Bw8A&s">
+</div>
+
+<div class="line35">
+    <h1>An all-rounded learning experience</h1>
+    <h3>The faculty was very knowledgeable.
+     The doubt-clearing sessions were very helpful.
+    The projects during the program covered the entire topic taught during that week/fortnight.
+     The seriousness with which the capstone project is treated makes the student 
+     understand all the topics and understand them properly before completing the project.</h3>
+
+     <img style="width: 15%;" margin-top="10%;" src="https://d1vwxdpzbgdqj.cloudfront.net/s3-public-images/page-banners/home/hitachi_vantara.png">
+     <h3>Raghavendra Prabhu </h3>
+     <h4 style="color: blue;">Global Delivery Head · Hitachi Vantara</h4>
+</div>
+</body>
+</html>
